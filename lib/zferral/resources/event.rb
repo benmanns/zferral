@@ -1,3 +1,5 @@
+require File.join(File.dirname(__FILE__), '..', 'resource')
+
 module Zferral
   # A Zferral Event Resource
   #
