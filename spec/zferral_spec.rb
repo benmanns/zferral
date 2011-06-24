@@ -16,6 +16,13 @@ describe "Zferral" do
     end
   end
 
+  describe "#coupon" do
+    specify { subject.coupon.should == Zferral::Coupon }
+    it 'should set client to reference self' do
+      subject.coupon.client.should == subject
+    end
+  end
+
   describe "#event" do
     specify { subject.event.should == Zferral::Event }
     it 'should set client to reference self' do

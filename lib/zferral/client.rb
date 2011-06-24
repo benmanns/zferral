@@ -30,5 +30,12 @@ module Zferral
     def event
       Zferral::Event.connect(self)
     end
+
+    # A {Zferral::Coupon} resource for this Client
+    #
+    # @return [Zferral::Coupon] {Zferral::Coupon} class
+    def coupon
+      Zferral::Coupon.connect(self)
+    end
   end
 end
